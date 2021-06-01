@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Montserrat:wght@300;400;700;900&display=swap');
+:root {
+    --bodyFont: 'Montserrat', sans-serif;
+    --primaryColor: #272b34;
+    --secondaryColor: #8df48b;
+    --accents: #d85080;
+    --white: #fff;
+    --lightGray: #f1f1f1;
+    --font: 16px;
+    --textShadow: 5px 5px 20px var(--primaryColor);
+    --transition: .3s ease;
+}
+body {
+    font-family: var(--bodyFont);
+    font-size: var(--font);
+    background: var(--primaryColor);
+}
+h1, h2, h3, h4 {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/****************
+header
+****************/
+.navbar-brand {
+    background: var(--secondaryColor);
+    padding: 10px;
+    font-family: 'Faster One', cursive;
+    color: var(--primaryColor) !important;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: var(--transition);
+}
+.navbar-brand:hover {
+    background: var(--primaryColor);
+    color: var(--secondaryColor) !important;
+}
+.navbar {
+    border-bottom:5px solid var(--secondaryColor);
+    background: var(--primaryColor);
+    padding: 0 20px 0 0;
+    position: relative;
+    top: 50px;
+}
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+nav ul li {
+    text-transform: uppercase;
+}
+nav ul li .green {
+    color: var(--secondaryColor) !important;
+}
+nav ul li:hover {
+    text-decoration: underline;
+}
+header .text {
+    margin-top: 260px;
+}
+header h1 {
+    font-size: 6rem;
+    color: var(--secondaryColor);
+    text-shadow: var(--textShadow);
+}
+/****************
+onama
+****************/
+.onama h2 {
+    font-size: 3rem;
+}
+.onama h2::after {
+    display: block;
+    content: "";
+    width: 250px;
+    height: 5px;
+    background: var(--secondaryColor);
+    margin: 30px auto;
+}
+/****************
+teme
+****************/
+.teme {
+    background: var(--secondaryColor);
+}
+.teme i {
+    background: var(--primaryColor);
+    color: var(--white);
+    width: 200px;
+    height: 200px;line-height: 200px;
+    font-size: 4rem;
+    clip-path: polygon(0 0, 75% 0%, 100% 50%, 75% 100%, 0 100%, 25% 49%);
+}
+.teme h4 {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+.teme h2 {
+    font-size: 3rem;
+}
+.teme h2::after {
+    display: block;
+    content: "";
+    width: 250px;
+    height: 5px;
+    background: var(--primaryColor);
+    margin: 30px auto;
+}
+/****************
+cta
+****************/
+.cta {
+    text-align: center;
+    background-image: linear-gradient(rgba(255,255,255,.8),rgba(255,255,255,.8)),url(img/cta.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 65vh;
+}
+.cta .text {
+    height: 65vh;
+}
+.cta h2 {
+    font-size: 3.5rem;
+}
+.cta h2::after {
+    display: block;
+    content: "";
+    width: 250px;
+    height: 5px;
+    background: var(--accents);
+    margin: 30px auto;
+}
+.cta .color {
+    background: var(--secondaryColor);
+}
+.cta button {
+    text-transform: uppercase;
+    background: var(--accents);
+    color: var(--white);
+}
+/****************
+footer
+****************/
+footer span {
+    color: var(--secondaryColor);
+}
+/****************
+blogHeader
+****************/
+.blogHeader {
+    background-image: url(img/blog_header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+.blogHeader .text {
+    margin-top: 150px;
+}
+/****************
+blog
+****************/
+.blog img {
+    border-radius: 50px 0 0 0;
+}
+.blog .image {
+    position: relative;
+}
+.blog .meta {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    padding: 5px;
+    background: var(--secondaryColor);
+    border: 1px solid var(--primaryColor);
+    border-radius: 3px;
+} 
+.blog .text {
+    background: var(--secondaryColor);
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 0 0 50px 0;
+    border: 1px solid var(--primaryColor);
+    position: relative;
+    top: -50px;
+}
+.blog button {
+    background: var(--accents);
+    color: var(--white);
+}
+.blog .widget {
+    background: var(--secondaryColor);
+    line-height: 2;
+    border-radius: 50px 0 50px 0;
+}
+.widget ul li a {
+    color: var(--primaryColor);
+    border-bottom: 1px solid var(--primaryColor);
+    transition: var(--transition);
+}
+.widget ul li a:hover {
+    text-decoration: none;
+    color: var(--white);
+}
+/****************
+responsive
+****************/
+@media (max-width:767px) {
+    header h1 {
+        font-size: 4.5rem;
+        position: relative;
+        top: -150px;
+    }
+    .navbar-toggler-icon {
+        background: var(--secondaryColor);
+    }
+    header p {
+        position: relative;
+        top: -150px;
+    }
+    .cta {
+        height: 75vh;
+    }
+    .blogHeader h1 {
+        position: relative;
+        top: 10px;
+    }
+ }   
+
+
+
+
+
+
+
+
+
+
+
